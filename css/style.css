@@ -37,6 +37,14 @@ body.light-theme {
   --line: rgba(46, 20, 80, 0.15);
   --surface: rgba(255, 255, 255, 0.58);
 }
+
+/* Fix heading readability in light mode */
+body.light-theme h1,
+body.light-theme h2,
+body.light-theme h3,
+body.light-theme h4 {
+  color: #f5edff;
+}
 a {
   color: inherit;
   text-decoration: none;

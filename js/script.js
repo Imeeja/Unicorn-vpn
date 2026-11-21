@@ -22,7 +22,10 @@ navMenu.querySelectorAll("a").forEach((link) =>
 
 // Toggle a bright reading theme. The selected mode is remembered in this browser.
 const savedTheme = localStorage.getItem("unicorn-theme");
-if (savedTheme === "light") document.body.classList.add("light-theme");
+
+if (savedTheme !== "dark") {
+  document.body.classList.add("light-theme");
+}
 function updateThemeIcon() {
   themeToggle.textContent = document.body.classList.contains("light-theme")
     ? "☾"
