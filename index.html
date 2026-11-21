@@ -3,7 +3,537 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Unicorn VPN — a little magic for your online privacy. Browse freely, securely, and beautifully."
+    />
+    <title>Unicorn VPN — A little magic. A lot more freedom.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="site-glow glow-a" aria-hidden="true"></div>
+    <div class="site-glow glow-b" aria-hidden="true"></div>
+    <header class="header" id="top">
+      <a class="brand" href="#top" aria-label="Unicorn VPN home">
+        <span class="brand-mark"
+          ><svg viewBox="0 0 40 40" aria-hidden="true">
+            <path
+              d="M20 4 25 14 36 17 28 25 29 36 20 31 11 36 12 25 4 17 15 14Z"
+              fill="url(#brandGradient)"
+            />
+            <path
+              d="M20 4 25 14 36 17 28 25 29 36 20 31 11 36 12 25 4 17 15 14Z"
+              stroke="white"
+              stroke-opacity=".6"
+              stroke-width="1.2"
+              fill="none"
+            />
+            <defs>
+              <linearGradient id="brandGradient" x1="5" y1="4" x2="34" y2="36">
+                <stop stop-color="#ff8bd9" />
+                <stop offset=".5" stop-color="#a8a0ff" />
+                <stop offset="1" stop-color="#69f5ed" />
+              </linearGradient>
+            </defs></svg
+        ></span>
+        <span>unicorn<span class="brand-vpn">vpn</span></span>
+      </a>
+      <nav class="nav" id="navMenu" aria-label="Main navigation">
+        <a href="#magic">The magic</a><a href="#network">Our universe</a
+        ><a href="#plans">Plans</a><a href="#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle light theme"
+        >
+          ☼</button
+        ><a class="nav-cta" href="#plans">Get your magic <span>↗</span></a>
+      </div>
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="sparkle">✦</span> Your internet, enchanted
+            <span class="eyebrow-dot"></span>
+          </div>
+          <h1>
+            Online freedom<br />with a little
+            <span class="gradient-text">magic.</span>
+          </h1>
+          <p class="hero-description">
+            A safer, smoother, more open internet is just a tap away. Say
+            goodbye to digital boundaries and hello to your own universe.
+          </p>
+          <div class="hero-buttons">
+            <a class="button button-primary" href="#plans"
+              >Find your magic <span>↗</span></a
+            ><a class="button button-ghost" href="#magic"
+              ><span class="play-icon">▶</span> Discover Unicorn</a
+            >
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack">
+              <span>🌙</span><span>🪐</span><span>✨</span><span>🦄</span>
+            </div>
+            <div>
+              <strong>Made for curious minds</strong
+              ><small>Browse beyond the ordinary</small>
+            </div>
+          </div>
+        </div>
+        <div
+          class="hero-art reveal"
+          aria-label="A glowing holographic unicorn portal floating in a magical galaxy"
+        >
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="planet planet-small"></div>
+          <div class="planet planet-pink"></div>
+          <div class="planet planet-cyan"></div>
+          <div class="portal">
+            <div class="portal-ring ring-outer"></div>
+            <div class="portal-ring ring-middle"></div>
+            <div class="portal-core"></div>
+            <div class="portal-shine"></div>
+            <svg
+              class="unicorn"
+              viewBox="0 0 280 280"
+              role="img"
+              aria-label="Stylized luminous unicorn head with a rainbow mane"
+            >
+              <defs>
+                <linearGradient id="horn" x1="0" y1="0" x2="1" y2="1">
+                  <stop stop-color="#fff8bd" />
+                  <stop offset=".48" stop-color="#ffc2e8" />
+                  <stop offset="1" stop-color="#a4ffff" />
+                </linearGradient>
+                <linearGradient id="mane" x1="0" y1="0" x2="1" y2="1">
+                  <stop stop-color="#ff69c9" />
+                  <stop offset=".45" stop-color="#a28aff" />
+                  <stop offset="1" stop-color="#5cf7ed" />
+                </linearGradient>
+              </defs>
+              <path
+                d="M79 206c-25-30-27-76-3-112 17-26 53-42 84-29 23 9 40 30 48 57 8 25 3 48-8 67-14 25-40 39-70 37-25-2-42-9-51-20Z"
+                fill="url(#mane)"
+                opacity=".95"
+              />
+              <path d="M87 111 64 53l58 32Z" fill="#c4b5ff" />
+              <path d="M100 109 76 62l39 22Z" fill="#ffb8e9" />
+              <path d="M175 107 203 56l-8 66Z" fill="#a6fff3" />
+              <path d="M182 111 199 69l-8 47Z" fill="#e4d8ff" />
+              <path
+                d="M132 42 164 4l-8 49Z"
+                fill="url(#horn)"
+                stroke="#fff"
+                stroke-opacity=".55"
+                stroke-width="2"
+              />
+              <path
+                d="M100 98c16-24 47-31 72-12 28 20 36 53 29 83-7 22-27 39-53 42-31 4-59-16-67-45-9-28-1-51 19-68Z"
+                fill="#f9f4ff"
+              />
+              <path
+                d="M113 137c-10 2-18 11-19 22 0 11 9 18 20 16"
+                fill="none"
+                stroke="#bd9bff"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+              <ellipse cx="143" cy="126" rx="6" ry="9" fill="#2d204b" />
+              <circle cx="145" cy="123" r="2" fill="white" />
+              <path
+                d="M149 160c12 11 25 10 35-1"
+                fill="none"
+                stroke="#c08cde"
+                stroke-width="4"
+                stroke-linecap="round"
+              />
+              <path
+                d="M103 106c-28 5-39 38-31 63 6 18 24 29 42 22-16-20-17-46-11-85Z"
+                fill="#ff8ed9"
+              />
+              <path
+                d="M185 107c23 23 25 54 10 79-15 23-35 34-53 31 23-20 34-55 43-110Z"
+                fill="#67e9e8"
+              />
+              <path
+                d="M115 188c-17 20-32 25-47 24 10 17 31 23 50 11 12-8 20-21 24-33"
+                fill="#8d7aff"
+                opacity=".9"
+              />
+              <path
+                d="M170 190c17 15 31 18 44 12-7 20-27 29-46 18-12-7-21-21-23-34"
+                fill="#ff78c8"
+                opacity=".9"
+              />
+            </svg>
+          </div>
+          <div class="floating-chip chip-top">
+            <span class="chip-icon">✧</span
+            ><span
+              ><strong>Connection enchanted</strong
+              ><small>You're safe in your orbit</small></span
+            >
+          </div>
+          <div class="floating-chip chip-bottom">
+            <span class="signal-bars"><i></i><i></i><i></i><i></i></span
+            ><span
+              ><strong>Ultra-smooth</strong
+              ><small>Streaming & browsing</small></span
+            >
+          </div>
+          <span class="art-star star-a">✦</span
+          ><span class="art-star star-b">✧</span
+          ><span class="art-star star-c">✶</span>
+        </div>
+        <div class="hero-scroll"><span></span> SCROLL TO EXPLORE</div>
+      </section>
+
+      <section class="ticker" aria-label="Unicorn VPN benefits">
+        <div class="ticker-track">
+          <span>✦ UNLOCK YOUR WORLD</span><span>✧ PRIVATE BY DESIGN</span
+          ><span>✦ MAGIC WITHOUT LIMITS</span
+          ><span>✧ YOUR SPACE, YOUR RULES</span><span>✦ UNLOCK YOUR WORLD</span
+          ><span>✧ PRIVATE BY DESIGN</span><span>✦ MAGIC WITHOUT LIMITS</span
+          ><span>✧ YOUR SPACE, YOUR RULES</span>
+        </div>
+      </section>
+
+      <section class="features section-shell" id="magic">
+        <div class="section-heading reveal">
+          <div class="eyebrow">A sprinkle of security</div>
+          <h2>
+            More than a VPN.<br /><span class="gradient-text"
+              >Your digital superpower.</span
+            >
+          </h2>
+          <p>All the protection you need, wrapped in a little wonder.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card card-violet reveal">
+            <div class="feature-icon icon-shield">✧</div>
+            <span class="card-kicker">01 / PRIVACY</span>
+            <h3>Invisible<br />in plain sight.</h3>
+            <p>
+              Keep your online activity private. Explore, stream, and scroll
+              without feeling watched.
+            </p>
+            <div class="card-orb orb-violet"></div>
+          </article>
+          <article class="feature-card card-cyan reveal">
+            <div class="feature-icon icon-bolt">⌁</div>
+            <span class="card-kicker">02 / SPEED</span>
+            <h3>Fast as a<br />fairy tale.</h3>
+            <p>
+              Enjoy a smooth connection that keeps up with your curiosity and
+              your favorite content.
+            </p>
+            <div class="card-orb orb-cyan"></div>
+          </article>
+          <article class="feature-card card-pink reveal">
+            <div class="feature-icon icon-world">◎</div>
+            <span class="card-kicker">03 / FREEDOM</span>
+            <h3>Worlds within<br />your reach.</h3>
+            <p>
+              Discover new corners of the internet and open up more ways to
+              experience the world.
+            </p>
+            <div class="card-orb orb-pink"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="network-section" id="network">
+        <div class="network-inner section-shell">
+          <div class="network-copy reveal">
+            <div class="eyebrow">Your passport to the internet</div>
+            <h2>
+              One little portal.<br /><span class="gradient-text"
+                >A whole universe.</span
+              >
+            </h2>
+            <p>
+              Travel from your cozy corner of the world to wherever your
+              imagination takes you. Your next favorite place is only a
+              connection away.
+            </p>
+            <a class="button button-primary" href="#plans"
+              >Explore the universe <span>↗</span></a
+            >
+            <div class="network-stats">
+              <div>
+                <strong class="counter" data-count="90">0</strong
+                ><span>+ locations</span>
+              </div>
+              <div>
+                <strong class="counter" data-count="35">0</strong
+                ><span>+ countries</span>
+              </div>
+              <div>
+                <strong class="counter" data-count="24">0</strong
+                ><span>/7 magic</span>
+              </div>
+            </div>
+          </div>
+          <div class="network-visual reveal">
+            <div class="map-glow"></div>
+            <div class="map-grid"></div>
+            <div class="world-orb">
+              <div class="world-line line-1"></div>
+              <div class="world-line line-2"></div>
+              <div class="world-line line-3"></div>
+              <span class="location-dot dot1"></span
+              ><span class="location-dot dot2"></span
+              ><span class="location-dot dot3"></span
+              ><span class="location-dot dot4"></span
+              ><span class="location-dot dot5"></span
+              ><span class="location-dot dot6"></span>
+            </div>
+            <div class="location-label label1">✦ London</div>
+            <div class="location-label label2">✧ Tokyo</div>
+            <div class="location-label label3">✦ New York</div>
+            <div class="location-label label4">✧ Singapore</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="promise section-shell">
+        <div class="promise-panel reveal">
+          <div class="promise-decoration">✦</div>
+          <div class="promise-copy">
+            <div class="eyebrow">Your privacy is precious</div>
+            <h2>
+              We believe your<br />data belongs
+              <span class="gradient-text">to you.</span>
+            </h2>
+            <p>
+              Your digital life is yours. We’re here to help you protect it with
+              a secure connection and a little peace of mind—without making
+              privacy feel complicated.
+            </p>
+            <div class="promise-points">
+              <span>✧ Easy to use</span><span>✧ Privacy-first</span
+              ><span>✧ No tech wizardry required</span>
+            </div>
+          </div>
+          <div class="promise-visual">
+            <div class="shield-halo">
+              <div class="shield-shape">
+                <svg viewBox="0 0 120 140" aria-hidden="true">
+                  <path
+                    d="M60 8 105 26v40c0 29-19 49-45 66C34 115 15 95 15 66V26Z"
+                    fill="url(#shieldGrad)"
+                    stroke="white"
+                    stroke-opacity=".6"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="m39 70 14 14 30-34"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="shieldGrad"
+                      x1="10"
+                      y1="10"
+                      x2="110"
+                      y2="130"
+                    >
+                      <stop stop-color="#ff78d3" />
+                      <stop offset=".55" stop-color="#8c7bff" />
+                      <stop offset="1" stop-color="#56e8e6" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+            <span class="promise-star star1">✧</span
+            ><span class="promise-star star2">✦</span
+            ><span class="promise-star star3">✶</span>
+          </div>
+        </div>
+      </section>
+      <section class="plans section-shell" id="plans">
+        <div class="section-heading reveal">
+          <div class="eyebrow">Choose your adventure</div>
+          <h2>Your magic. <span class="gradient-text">Your way.</span></h2>
+          <p>
+            Find a plan that fits your world. No complicated spells required.
+          </p>
+        </div>
+        <div class="plan-grid">
+          <article class="plan-card reveal">
+            <span class="plan-label">A little magic</span>
+            <h3>Monthly</h3>
+            <div class="price">$9.99 <small>/ month</small></div>
+            <p>Perfect for trying a new universe.</p>
+            <ul>
+              <li>✦ Secure browsing</li>
+              <li>✦ Global locations</li>
+              <li>✦ All your devices</li>
+            </ul>
+            <a href="#contact" class="button button-ghost plan-button"
+              >Choose monthly</a
+            >
+          </article>
+          <article class="plan-card plan-featured reveal">
+            <div class="popular-pill">✦ Most magical</div>
+            <span class="plan-label">The best adventure</span>
+            <h3>Yearly</h3>
+            <div class="price">$4.99 <small>/ month</small></div>
+            <p>More magic, less spending.</p>
+            <ul>
+              <li>✦ Everything in Monthly</li>
+              <li>✦ Save 50% yearly</li>
+              <li>✦ Priority support</li>
+            </ul>
+            <a href="#contact" class="button button-primary plan-button"
+              >Choose yearly <span>↗</span></a
+            >
+          </article>
+          <article class="plan-card reveal">
+            <span class="plan-label">A forever spell</span>
+            <h3>Lifetime</h3>
+            <div class="price">$149 <small>/ once</small></div>
+            <p>One spell. Endless adventures.</p>
+            <ul>
+              <li>✦ Everything in Yearly</li>
+              <li>✦ One-time payment</li>
+              <li>✦ Lifetime access</li>
+            </ul>
+            <a href="#contact" class="button button-ghost plan-button"
+              >Choose lifetime</a
+            >
+          </article>
+        </div>
+        <p class="plan-note">
+          Concept pricing for this landing page demo.
+          <a href="#contact">Questions? Talk to us.</a>
+        </p>
+      </section>
+      <section class="faq section-shell" id="faq">
+        <div class="faq-heading reveal">
+          <div class="eyebrow">Curious creatures welcome</div>
+          <h2>
+            Questions?<br /><span class="gradient-text">We have answers.</span>
+          </h2>
+          <p>Everything you need to know before stepping through the portal.</p>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary>What exactly is a VPN? <span>+</span></summary>
+            <p>
+              A VPN (Virtual Private Network) creates a more private connection
+              between your device and the internet, helping protect your online
+              activity and masking your IP address.
+            </p>
+          </details>
+          <details>
+            <summary>
+              Can I use Unicorn on multiple devices? <span>+</span>
+            </summary>
+            <p>
+              Absolutely! A VPN can be used across your devices. The exact
+              device limit would depend on the plan you choose.
+            </p>
+          </details>
+          <details>
+            <summary>Will a VPN slow down my internet? <span>+</span></summary>
+            <p>
+              Any VPN may affect connection speed, but a well-optimized network
+              aims to keep your browsing smooth and fast.
+            </p>
+          </details>
+          <details>
+            <summary>How do I get started? <span>+</span></summary>
+            <p>
+              Choose your plan, set up the app on your device, connect to a
+              location, and start exploring.
+            </p>
+          </details>
+        </div>
+      </section>
+      <section class="contact-section section-shell" id="contact">
+        <div class="contact-panel reveal">
+          <div class="contact-copy">
+            <div class="eyebrow">Send a little sparkle</div>
+            <h2>Let's talk<br /><span class="gradient-text">magic.</span></h2>
+            <p>
+              Questions, feedback, or just want to say hello? Our inbox is open
+              to curious minds.
+            </p>
+            <div class="contact-decoration">✧</div>
+          </div>
+          <form class="contact-form" id="contactForm" novalidate>
+            <label for="name">Your name</label
+            ><input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="What should we call you?"
+              required
+              minlength="2"
+            /><label for="email">Email address</label
+            ><input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@somewhere.com"
+              required
+            /><label for="message">Your message</label
+            ><textarea
+              id="message"
+              name="message"
+              placeholder="Tell us what's on your mind..."
+              required
+              minlength="10"
+              rows="4"
+            ></textarea
+            ><button class="button button-primary submit-button" type="submit">
+              Send message <span>↗</span>
+            </button>
+            <p class="form-message" id="formMessage" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section-shell">
+      <a class="brand" href="#top"
+        ><span class="brand-mark"><span>✦</span></span
+        ><span>unicorn<span class="brand-vpn">vpn</span></span></a
+      >
+      <p>Somewhere between privacy and magic. ✧</p>
+      <div class="footer-links">
+        <a href="#magic">Features</a><a href="#plans">Plans</a
+        ><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+      </div>
+      <small>© 2026 Unicorn VPN. Made of stardust & good intentions.</small>
+    </footer>
+    <div class="toast" id="toast" role="status"></div>
+    <script src="js/script.js"></script>
+  </body>
 </html>
