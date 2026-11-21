@@ -39,10 +39,7 @@ body.light-theme {
 }
 
 /* Fix heading readability in light mode */
-body.light-theme h1,
-body.light-theme h2,
-body.light-theme h3,
-body.light-theme h4 {
+body.light-theme .fixlight {
   color: #f5edff;
 }
 a {
